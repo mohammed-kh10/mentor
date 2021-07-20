@@ -1,0 +1,605 @@
+*{
+    padding: 10;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.margin{
+    margin-top: 50px;
+}
+button,video{
+    outline: none;
+}
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*------------------- end of grid --------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+.home-nav{
+    background-color: rgb(193, 243, 212);
+    border-bottom: 2px solid rgb(0, 255, 115);
+    position: relative;
+}
+.home-nav h1{
+    margin: 15px 20px;
+    color: rgb(6, 172, 6);
+    display: inline;
+    font-size: 40px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+.home-nav ul{
+    list-style: none;
+    display: flex;
+}
+.home-nav ul li a{
+    color: black;
+    font-size: 25px;
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    opacity: .5;
+}
+.home-nav ul li a:hover{
+    opacity: 1;
+}
+.home-nav ul .act{
+    opacity: 1;
+}
+.home-nav button{
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    font-size: 20px;
+    background-color: rgb(6, 172, 6);
+    color: rgb(193, 243, 212);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.home-nav button:hover{
+    color: rgb(6, 172, 6);
+    background-color: rgb(131, 233, 170);
+    border: 1px solid rgb(6, 172, 6);
+}
+/*----------------------------------------------------*/
+/*------------- end of nav bar -------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+.home-header{
+    height: 630px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,.3)),url(../image/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 1366px 630px;
+    background-attachment: fixed;
+    position: relative;
+}
+.home-header h1{
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    color: white;
+    font-size: 44px;
+}
+.home-header h2{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-size: 44px;
+}
+.home-header p{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: rgb(252, 203, 203);
+    font-size: 23px;
+}
+.home-header button{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size: 20px;
+    background-color: rgb(6, 172, 6);
+    color: rgb(193, 243, 212);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.home-header button:hover{
+    color: rgb(6, 172, 6);
+    background-color: rgb(131, 233, 170);
+    border: 1px solid rgb(6, 172, 6);
+}
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*------------ end of header section -----------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+.about .right .p1{
+    color: firebrick;
+    font-size: 22px;
+}
+.about .right h1{
+    font-size: 50px;
+    margin: 10px 0px;
+}
+.about .right .p2{
+    font-size: 22px;
+    margin: 10px 0px;
+    color: #888;
+}
+.about .right .p3{
+    font-size: 22px;
+    margin: 10px 0px;
+}
+.about .right .p3 i{
+    font-size: 20px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    padding: 5px;
+}
+.about .right button{
+    font-size: 20px;
+    background-color: rgb(6, 172, 6);
+    color: rgb(193, 243, 212);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.about .right button:hover{
+    color: rgb(6, 172, 6);
+    background-color: rgb(131, 233, 170);
+    border: 1px solid rgb(6, 172, 6);
+}
+.about .left{
+    height: 415px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1),rgba(60, 160, 85, 0.8)),url(../image/about.jpg);
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*---------- end of section about -------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+.numbers{
+    height: 200px;
+    width: 88%;
+    margin: auto;
+    background-color: rgb(215, 236, 230);
+}
+.numbers .one h1{
+    text-align: center;
+    font-size: 90px;
+    margin: 10px 0px;
+    color: rgb(11, 187, 40);
+}
+.numbers p{
+    font-size: 30px;
+    margin: 10px 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*-------- end of numbers section------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+.choose .one{
+    background-color: rgb(0, 255, 115);
+    padding: 20px 15px;
+    border-radius: 10px;
+    border-bottom: 4px solid yellow;
+}
+.choose .one h1{
+    color: white;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+.choose .one h2{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.choose .one p{
+    color: #333;
+    text-align: justify;
+}
+.choose .one button{
+    font-size: 20px;
+    background-color: rgb(6, 172, 6);
+    color: rgb(193, 243, 212);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.choose .one button:hover{
+    color: rgb(6, 172, 6);
+    background-color: rgb(131, 233, 170);
+}
+.choose .two{
+    padding: 30px 0px;
+}
+.choose .two .i{
+    margin-left: 38%;
+    margin-bottom: 20px;
+}
+.choose .two .i i{
+    display: block;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid rgb(0, 162, 255);
+    color: rgb(0, 162, 255);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(240, 230, 230);
+    transition: color 1.5s, border 1s;
+}
+.choose .two .i i:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+.choose .two h1,.choose .two h2{
+    text-align: center;
+    margin: 10px 0px;
+}
+.choose .two p{
+    text-align: center;
+    margin: 15px 14px;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*---------- end of section choose -----*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+.courses1 .one{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.courses1 .one i{
+    margin-right: 10px;
+    color: rgb(0, 255, 115);
+}
+.courses1 .one p{
+    text-align: center;
+    margin: 10px;
+    font-size: 22px;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*---- End of courses 111111 Section---*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+.courses2 .head p{
+    color: red;
+    font-size: 30px;
+    margin: 0px 0px 10px 20px;
+}
+.courses2 .head h1{
+    font-size: 40px;
+    margin: 0px 0px 10px 20px;
+}
+.courses2 .one{
+    justify-content: space-between;
+}
+.courses2 .one .img1{
+    width: 100%;
+    height: 300px;
+}
+.courses2 .one button{
+    font-size: 20px;
+    width: 50%;
+    height: 20%;
+    background-color: rgb(6, 172, 6);
+    color: rgb(193, 243, 212);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 120px 10px 10px;
+}
+.courses2 .one button:hover{
+    color: rgb(6, 172, 6);
+    background-color: rgb(131, 233, 170);
+}
+.courses2 .one span{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.courses2 .one h1{
+    font-size: 28px;
+    margin: 10px;
+}
+.courses2 .one hr{
+    height: 4px;
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(11, 187, 40);
+}
+.courses2 .one .img2{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 40px;
+    border: 2px solid black;
+}
+.courses2 .one .p2{
+    display: inline-block;
+    float: right;
+    margin: 5% 10px 0px 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--- End of courses 2222222 section--*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+.trainers .head p{
+    color: red;
+    font-size: 30px;
+    margin: 0px 0px 10px 20px;
+}
+.trainers .head h1{
+    font-size: 40px;
+    margin: 0px 0px 10px 20px;
+}
+.trainers .bor1{
+    border: 2px solid rgb(0, 255, 115);
+}
+.trainers .bor2{
+    border: 2px solid rgb(0, 255, 115);
+    transform: rotate(4deg);
+}
+.trainers .col-4{
+    width: 32.9%;
+}
+.trainers .one{
+    transform: rotate(-3deg);
+}
+.trainers .one img{
+    width: 100%;
+    height: 300px;
+}
+.trainers .one h1{
+    font-size: 26px;
+    margin: 10px 0px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.trainers .one h2{
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0px;
+}
+.trainers .one p{
+    text-align: center;
+    margin: 10px 30px;
+}
+.trainers .one .social ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.trainers .one .social ul li{
+    margin-right: 20px;
+}
+.trainers .one .social ul li a{
+    color: #444;
+}
+.trainers .one .social ul li i{
+    font-size: 28px;
+    transition: font-size .4s , color .4s;
+}
+.trainers .one .social ul li i:hover{
+    font-size: 39px;
+    color: rgb(0, 255, 115);
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*----- End of TRAINERS Section--------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+.footer{
+    background-color: rgb(204, 190, 190);
+    padding: 20px 0px;
+}
+.footer .one h1{
+    margin-bottom: 10px;
+}
+.footer .one .p1{
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+.footer .one .p2{
+    margin-bottom: 10px;
+}
+.footer .one .p2 span{
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.footer .two h1{
+    margin-bottom: 10px;
+}
+.footer .two ul{
+    list-style: none;
+}
+.footer .two ul li{
+    margin-bottom: 10px;
+}
+.footer .two ul li a{
+    text-decoration: none;
+    color: rgb(48, 32, 32);
+    transition: color .5s , font-size .5s;
+}
+.footer .two ul li a span{
+    font-size: 27px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.footer .two ul li a:hover{
+    color: black;
+    font-size: 25px;
+}
+.footer .three h1{
+    margin-bottom: 10px;
+}
+.footer .three p{
+    margin-bottom: 10px;
+}
+.footer .three form input[type=email]{
+    margin-right: 8px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+.footer .three form input[type=submit]{
+    background-color: rgb(0, 255, 115);
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s , transform .5s, color .5s;
+}
+.footer .three form input[type=submit]:hover{
+    background-color: rgb(116, 170, 155);
+    transform: scale(1.3);
+    color: rgb(0, 73, 33);
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*-------------- end of footer ------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*----------- start the responsive part ------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+@media (max-width:600px){
+    .col-1{width: 97%; margin-bottom: 20px;}
+    .col-2{width: 97%; margin-bottom: 20px;;}
+    .col-3{width: 97%; margin-bottom: 20px;}
+    .col-4{width: 97%; margin-bottom: 20px;}
+    .col-5{width: 97%; margin-bottom: 20px;}
+    .col-6{width: 97%; margin-bottom: 20px;}
+    .col-7{width: 97%; margin-bottom: 20px;}
+    .col-8{width: 97%; margin-bottom: 20px;}
+    .col-9{width: 97%; margin-bottom: 20px;}
+    .col-10{width: 97%; margin-bottom: 20px;}
+    .col-11{width: 97%; margin-bottom: 20px;}
+    .col-12{width: 97%; margin-bottom: 20px;}
+    /*erlkjgi34j90u49083ujgn4398j*/
+    /*erlkjgi34j90u49083ujgn4398j*/
+    /*erlkjgi34j90u49083ujgn4398j*/
+    /*erlkjgi34j90u49083ujgn4398j*/
+    /*erlkjgi34j90u49083ujgn4398j*/
+    [class*="col-"]{
+        padding: 7px;
+    }
+    .container{
+        width: 97%;
+    }
+    .margin{
+        margin-top: 20px;
+    }
+
+
+
+    .home-nav{
+        visibility: hidden;
+        height: 0px;
+        width: 600px;
+    }
+    .home-header{
+        background-size: 100% 330px;
+        height: 330px;
+    }
+    .home-header h1{
+        position: absolute;
+        top: 7%;
+        font-size: 34px;
+    }
+    .home-header h2{
+        position: absolute;
+        top: 20%;
+        font-size: 34px;
+    }
+    .home-header p{
+        position: absolute;
+        top: 30%;
+        font-size: 23px;
+    }
+    .home-header button{
+        position: absolute;
+        top: 40%;
+        font-size: 20px;
+    }
+    /*----------------------------------------------------*/
+    /*----------------------------------------------------*/
+    /*----------------------------------------------------*/
+    .choose .two .i{
+        margin-left: 44%;
+    }
+    .trainers .col-4{
+        width: 97%;
+    }
+}
